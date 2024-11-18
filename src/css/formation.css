@@ -16,7 +16,20 @@ main h1{
     position: relative;
 }
 
-.formation main li::before{
+.ignore1 li{
+    list-style: decimal !important;
+
+    & ~ ul li{
+        list-style: disc !important;
+    }
+}
+
+.ignore1 li::before{
+    content: "";
+    display: none !important;
+}
+
+.formation main :not(.ignore1) li::before{
     content: "";
     display: inline-block;
     position: absolute;

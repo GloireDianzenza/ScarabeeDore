@@ -28,7 +28,7 @@ main > p{
   padding-right: 15px !important;
 }
 
-.App *:not(header h1,button,i,.inner-blog *,a,.bolding){
+.App *:not(header h1,button,i,.inner-blog *,a,.bolding,input){
   color: white !important;
 }
 

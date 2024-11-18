@@ -7,6 +7,7 @@ function AvisComponent({value}) {
     const [currentUser,setUser] = useState({prenom:"",nom:"",email:""});
     
     useEffect(()=>{
+        if(value.UserId <= 0)return;
         setReview(value);
 
         fetch("http://localhost:8080/api/users/"+value.UserId)

@@ -38,3 +38,15 @@
         }
     }
 }
+
+.avis h2{
+    font-size: 50px !important;
+}
+
+.avis form label{
+    font-size: 20px;
+}
+
+.avis form input{
+    color: black !important;
+}

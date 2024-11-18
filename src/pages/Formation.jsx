@@ -72,18 +72,30 @@ function Formation() {
                 <div className='mt-3'>
                   <span><b className='bolding'>Ces formations sont proposées en distanciel, en présentiel ainsi qu’en Blended.</b></span> <br/><br/>
                   <span>J’utilise différentes méthodes lors des séances :</span>
-                </div>
-                <div className="mt-3">
-                    <div className="contacts">
-                        <div className="contact">
-                            <Icon size='40px' name={"bxs-envelope"}/>
-                            <Button variant='link' href='mailto:scarabee.dore21@gmail.com'>scarabee.dore21@gmail.com</Button>
-                        </div>
-                        <div className="contact">
-                            <Icon size='40px' name={"bxs-phone"}/>
-                            <Button variant='link' href='tel:0760231984'>(+33)7.60.23.19.84</Button>
-                        </div>
-                    </div>
+                  <ol className='ignore1'>
+                    <li>Méthode affirmative :</li>
+                    <ul>
+                      <li>J’explique en utilisant diverses présentations : Powerpoint, des études de cas vécues…</li>
+                    </ul>
+                    <li>Méthode interrogative :</li>
+                    <ul>
+                      <li>J’implique les apprenants en les interrogeant sur leurs expériences vécus</li>
+                    </ul>
+                    <li>Méthode démonstrative :</li>
+                    <ul>
+                      <li>Mise en pratique via des exercices, des simulations en demi-groupe</li>
+                    </ul>
+                    <li>Méthode expérimentielle :</li>
+                    <ul>
+                      <li>Je me centre sur l'apprentissage par l'erreur et l'expérimentation</li>
+                    </ul>
+                  </ol>
+                  <span>Toutes les séances sont basées sur la bienveillance et le secret professionnel. </span>
+                  <span>Pour toute information, vous pouvez me solliciter à l’adresse email suivante :
+<a href="mailto:scarabee.dore21@gmail.com">scarabee.dore21@gmail.com</a> <br />
+Ou par téléphone :
+<a href="tel:0760231984">07.60.23.19.84</a>
+</span>
                 </div>
             </section>
         </main>

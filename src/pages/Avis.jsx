@@ -90,6 +90,7 @@ function Avis() {
                 alert(JSON.stringify(data));
                 return;
               }
+              if(!data || data.id <= 0)throw data;
               let request = await fetch("http://localhost:8080/api/users/"+data.id);
               const currentUser = await request.json();
 
@@ -124,7 +125,6 @@ function Avis() {
               })
               const result = await request.json();
               if(result.error)throw result;
-              console.log(result);
               alert("Avis envoyé avec succès");
               window.location.reload();
             } catch (error) {
@@ -179,21 +179,21 @@ function Avis() {
             <main>
                 <h1 className='mb-4'>Avis des clients</h1>
                 <div className="avis-list">
-                   {reviewList.length > 1 && reviewList.map((val,idx)=><AvisComponent key={idx} value={val}/>)}
+                   {reviewList.length >= 1 && reviewList.map((val,idx)=><AvisComponent key={idx} value={val}/>)}
                 </div>
                 <h2>Laisser un avis</h2>
                 <Form onSubmit={login}>
                   <strong>Pour laisser un avis, vous devez être connecté</strong>
                   <Form.Group controlId='nom'>
-                    <Form.Label>Nom</Form.Label>
+                    <Form.Label>Nom *</Form.Label>
                     <Form.Control type='text' placeholder='Nom...' required name='nom'></Form.Control>
                   </Form.Group>
                   <Form.Group controlId='prenom'>
-                    <Form.Label>Prénom</Form.Label>
+                    <Form.Label>Prénom *</Form.Label>
                     <Form.Control type='text' placeholder='Prénom...' required name='prenom'></Form.Control>
                   </Form.Group>
                   <Form.Group controlId='mail'>
-                    <Form.Label>Adresse email</Form.Label>
+                    <Form.Label>Adresse email *</Form.Label>
                     <Form.Control type='email' placeholder='Adresse email...' required name='email'></Form.Control>
                   </Form.Group>
                   <Form.Group controlId='phone'>
@@ -206,10 +206,11 @@ function Avis() {
                   {signedIn && <Form.Group controlId='etoiles'>
                         <RangeSlider name="etoiles" min={0} max={5} tooltip='off' value={stars} onChange={(e)=>setStars(e.target.value)}/>
                     </Form.Group>}{signedIn && <strong>{stars}</strong>}
-                  {!signedIn && <Link to={"/inscription"}><Button type='button' variant='link'>Pas de compte ?</Button></Link>}
+                  {!signedIn && <Link to={"/inscription"}><Button type='button' variant='link'>Créer un compte</Button></Link>}
                   {!signedIn && <Button type='submit' variant='primary'>Se connecter</Button>}
                   {signedIn && <Button type='button' variant='primary' onClick={submitReview}>Laisser avis</Button>}
                   {signedIn && <Button type='button' variant='primary' onClick={logout}>Se déconnecter</Button>}
+                  <p>* Obligatoire</p>
                 </Form>
             </main>
             <FooterComponent/>
