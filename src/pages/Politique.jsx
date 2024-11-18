@@ -26,7 +26,7 @@ function Politique() {
         return (
           <footer>
             <div className='left'>
-              <Link to={"/qui"}><Button variant='link'>Entreprise</Button></Link>
+              <Link to={"/qui"}><Button variant='link'>Qui suis-je ?</Button></Link>
               <Link to={"/avis"}><Button variant='link'>Avis des clients</Button></Link>
               <a href='#top'><Button variant='link'>A propos</Button></a>
             </div>
@@ -48,7 +48,7 @@ function Politique() {
         <div id='top'></div>
         <header>
         <div className='HeaderTop'>
-          <h1>Scarabée Doré</h1>
+           
           <img src={Scarabee} alt='scarabée'/>
         </div>
             <div className='HeaderBottom'>

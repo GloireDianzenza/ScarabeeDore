@@ -29,7 +29,7 @@ function Blog() {
         return (
           <footer>
             <div className='left'>
-              <Link to={"/qui"}><Button variant='link'>Entreprise</Button></Link>
+              <Link to={"/qui"}><Button variant='link'>Qui suis-je ?</Button></Link>
               <Link to={"/avis"}><Button variant='link'>Avis des clients</Button></Link>
               <a href='#top'><Button variant='link'>A propos</Button></a>
             </div>
@@ -39,8 +39,7 @@ function Blog() {
               <Link to={"/rgpd"}><Button variant='link'>RGPD</Button></Link>
             </div>
             <div className='right'>
-              <Link to={"/cgv"}><Button variant='link'>Conditions</Button></Link>
-              <Link to={"/politique"}><Button variant='link'>Politiques</Button></Link>
+              <a href='https://gloiredianzenza.github.io/portfolio/' target='_blank' rel='noreferrer'>Webmaster</a>
               <Link to={"/cookies"}><Button variant='link'>Paramètres de cookies</Button></Link>
             </div>
           </footer>
@@ -64,7 +63,7 @@ function Blog() {
         <div id='top'></div>
         <header>
         <div className='HeaderTop'>
-          <h1>Scarabée Doré</h1>
+           
           <img src={Scarabee} alt='scarabée'/>
         </div>
             <div className='HeaderBottom'>

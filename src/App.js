@@ -338,7 +338,7 @@ function FooterComponent(){
         <Link to={"/rgpd"}><Button variant='link'>RGPD</Button></Link>
       </div>
       <div className='right'>
-        <a href='https://gloiredianzenza.github.io/portfolio/'>Webmaster</a>
+        <a href='https://gloiredianzenza.github.io/portfolio/' target='_blank' rel='noreferrer'>Webmaster</a>
         <Link to={"/cookies"}><Button variant='link'>Paramètres de cookies</Button></Link>
       </div>
     </footer>
@@ -422,7 +422,7 @@ function App() {
       <div id='top'></div>
       <header>
         <div className='HeaderTop'>
-          <h1>Scarabée Doré</h1>
+           
           <img src={Scarabee} alt='scarabée'/>
         </div>
         <div className='HeaderBottom'>
