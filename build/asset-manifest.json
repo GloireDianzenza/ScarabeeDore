@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/TravailScarabeeDore/static/css/main.2073be51.css",
+    "main.js": "/TravailScarabeeDore/static/js/main.1cdacbed.js",
+    "static/js/453.7719298e.chunk.js": "/TravailScarabeeDore/static/js/453.7719298e.chunk.js",
+    "static/media/pexels-divinetechygirl-1181533.jpg": "/TravailScarabeeDore/static/media/pexels-divinetechygirl-1181533.8eb7c82bcf51eadb5443.jpg",
+    "static/media/boxicons.svg": "/TravailScarabeeDore/static/media/boxicons.9e2b21b135bc7d4c803f.svg",
+    "static/media/Helpdesk Office 3 1872x1053.jpg": "/TravailScarabeeDore/static/media/Helpdesk Office 3 1872x1053.56a693a5c6fffc8e1622.jpg",
+    "static/media/boxicons.eot": "/TravailScarabeeDore/static/media/boxicons.65a8ce52fc5427e8f94d.eot",
+    "static/media/boxicons.woff": "/TravailScarabeeDore/static/media/boxicons.d12afc36557395143e4b.woff",
+    "static/media/boxicons.ttf": "/TravailScarabeeDore/static/media/boxicons.db9ddb1898dbd76badca.ttf",
+    "static/media/T_365456.jpg": "/TravailScarabeeDore/static/media/T_365456.134b449f0081bc7fbc8d.jpg",
+    "static/media/boxicons.woff2": "/TravailScarabeeDore/static/media/boxicons.df635aaf04cd75132f62.woff2",
+    "static/media/8578835e-a0ac-42c3-a67c-08b39bab073d.jpg": "/TravailScarabeeDore/static/media/8578835e-a0ac-42c3-a67c-08b39bab073d.3893ebc8e0a0c6c7ac31.jpg",
+    "static/media/depositphotos_56121605-stock-photo-female-managing-director-in-a.jpg": "/TravailScarabeeDore/static/media/depositphotos_56121605-stock-photo-female-managing-director-in-a.b44de67c2adb05472d87.jpg",
+    "index.html": "/TravailScarabeeDore/index.html",
+    "static/media/location.svg": "/TravailScarabeeDore/static/media/location.351870b901810823cc7db9f86f4e54f8.svg",
+    "static/media/star.svg": "/TravailScarabeeDore/static/media/star.daa0330fa0faf9acb38d.svg",
+    "main.2073be51.css.map": "/TravailScarabeeDore/static/css/main.2073be51.css.map",
+    "main.1cdacbed.js.map": "/TravailScarabeeDore/static/js/main.1cdacbed.js.map",
+    "453.7719298e.chunk.js.map": "/TravailScarabeeDore/static/js/453.7719298e.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2073be51.css",
+    "static/js/main.1cdacbed.js"
+  ]
+}

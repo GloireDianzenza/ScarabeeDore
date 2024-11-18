@@ -1,0 +1,40 @@
+@media screen and (max-width:475px) {
+    section h2{
+        text-align: center !important;
+    }
+
+    .step .right{
+        min-width: 90% !important;
+    }
+}
+@media screen and (max-width:800px) {
+    .buttons#seanceBtn{
+        font-size: 1.5rem !important;
+    }
+}
+
+@media screen and (max-width:825px) {
+    #formToggler::after{
+        content: "";
+        display: none;
+    }
+}
+
+
+@media screen and (max-width:700px) {
+    form > div:not(#msgGroup){
+        gap: 0;
+        flex-direction: column;
+        padding: 0 20px;
+    }
+
+    .form-control{
+        width: 90% !important;
+    }
+}
+
+@media screen and (max-width:500px) {
+    form button{
+        font-size: 1rem !important;
+    }
+}

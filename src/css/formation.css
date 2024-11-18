@@ -1,0 +1,102 @@
+main{
+    padding-top: 100px !important;
+    min-height: 100vh !important;
+}
+
+main h1{
+    padding-top: 100px !important;
+    font-weight: bold;
+    font-size: 40px;
+}
+
+.formation main ul,main li{
+    list-style: circle !important;
+    background-color: transparent !important;
+    border: none !important;
+    position: relative;
+}
+
+.formation main li::before{
+    content: "";
+    display: inline-block;
+    position: absolute;
+    left: -10px;top: 50%;
+    transform: translate(0,-50%);
+    height: 15px;
+    width: 15px;
+    background-color: black;
+    border-radius: 50%;
+}
+
+#part1 span{
+    padding: 0 20px;
+    margin-bottom: 30px !important;
+}
+
+#main > div{
+    padding: 30px !important;
+}
+
+main span{
+    font-size: 22px;
+}
+
+.formation .contact a{
+    color: yellow !important;
+    text-decoration: none !important;
+}
+
+.formation .contact a:hover{
+    text-decoration: underline !important;
+}
+
+.contact i{
+    background-color: #f0f0f0 !important;
+    color: black !important;
+    border-radius: 50%;
+    padding: 4px;
+}
+
+.contacts{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.contact{
+    display: flex;
+    justify-content: flex-start;
+    gap: 10px;
+    align-items: center;
+}
+
+section{
+    padding: 0 30px;
+}
+
+section span{
+    color: black;
+}
+
+.qui-suis-je #part-1{
+    display: flex;
+    flex-direction: column;
+}
+
+.qui-suis-je section p{
+    font-size: 18px;
+}
+
+.qui-suis-je h1{
+    font-family: Georgia, sans-serif;
+    font-size: 40px !important;
+}
+
+.qui-suis-je main > img{
+    max-width: 50% !important;
+}
+
+.qui-suis-je main span{
+    font-size: 28px;
+    font-family: "Baskervill Old Face",sans-serif;
+}
