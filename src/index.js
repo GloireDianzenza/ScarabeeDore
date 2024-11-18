@@ -25,7 +25,7 @@ root.render(
   <BrowserRouter>
       <Routes>
         <Route exact path='/' element={<App />}></Route>
-        <Route exact path='/TravailScarabeeDore' element={<App />}></Route>
+        <Route exact path='/ScarabeeDore' element={<App />}></Route>
         <Route path='/formation' element={<Formation/>}></Route>
         <Route path='/qui' element={<QuiSuisJe/>}></Route>
         <Route path='/bureau' element={<Bureaux/>}></Route>
