@@ -19,6 +19,7 @@ import EnCours from './pages/EnCours';
 import Inscription from './pages/Inscription';
 import Avis from './pages/Avis';
 import RGPD from './pages/RGPD';
+import Contact from './pages/Contact';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -39,6 +40,7 @@ root.render(
         <Route path='/avis' element={<Avis/>}></Route>
         <Route path='/inscription' element={<Inscription/>}></Route>
         <Route path='/rgpd' element={<RGPD/>}></Route>
+        <Route path='/contact' element={<Contact/>}></Route>
       </Routes>
   </BrowserRouter>
 );

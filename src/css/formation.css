@@ -76,7 +76,7 @@ main span{
     gap: 20px;
 }
 
-.contact{
+main .contact{
     display: flex;
     justify-content: flex-start;
     gap: 10px;
