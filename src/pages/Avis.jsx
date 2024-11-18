@@ -183,7 +183,7 @@ function Avis() {
                 </div>
                 <h2>Laisser un avis</h2>
                 <Form onSubmit={login}>
-                  <strong>Pour laisser un avis, vous devez être connecté</strong>
+                  <strong>Vous devez vous identifiez pour pouvoir laisser un avis</strong>
                   <Form.Group controlId='nom'>
                     <Form.Label>Nom *</Form.Label>
                     <Form.Control type='text' placeholder='Nom...' required name='nom'></Form.Control>

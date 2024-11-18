@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { ListGroup,Button, Form } from 'react-bootstrap';
 import { Link, useNavigate } from 'react-router-dom';
 import Scarabee from "../Assets/scarabée doré or et bleu-Photoroom.jpg";
+import "../css/contact.css";
 
 function Contact() {
 
@@ -56,6 +57,13 @@ function Contact() {
             </header>
             <main>
                 <h1 className='mb-4'>Contactez-moi</h1>
+                <Form>
+                    <h2>Vous devez vous identifiez pour pouvoir laisser un avis</h2>
+                    <Form.Group controlId='nom'>
+                      <Form.Label>Nom</Form.Label>
+                      <Form.Control name='nom' placeholder='Nom'/>
+                    </Form.Group>
+                </Form>
             </main>
             <FooterComponent/>
     </div>);

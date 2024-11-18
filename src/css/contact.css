@@ -1,0 +1,14 @@
+form{
+    background-color: #ecc440 !important;
+    padding: 20px !important;
+    h2{
+        color: black !important;
+    }
+    button{
+        background-color: #178582;
+    }
+
+    label{
+        font-size: 20px !important;
+    }
+}
