@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { ListGroup,Button } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import ArticleComponent from '../components/ArticleComponent';
-import Scarabee from "../Assets/ScarabeeDore.jpg";
+import Scarabee from "../Assets/scarabée doré or et bleu-Photoroom.jpg";
 
 function Blog() {
 

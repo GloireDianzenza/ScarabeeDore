@@ -4,7 +4,6 @@ import "./css/mobile.css";
 import ListGroup from 'react-bootstrap/ListGroup';
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
-import PageImage from "./images/depositphotos_56121605-stock-photo-female-managing-director-in-a.jpg";
 import Image1 from "./Assets/Untitled_Message/freepik__pixel-art-8bits-a-black-woman-with-long-sandyblond__29703.jpeg";
 import Image2 from "./Assets/Untitled_Message/freepik__adorable-cartoon-style-a-female-hiker-of-asian-des__304.jpeg";
 import Image3 from "./Assets/Untitled_Message/freepik__3d-model-serene-cinematic-high-angle-forced-perspe__30240.jpeg";
@@ -16,7 +15,7 @@ import { jwtDecode } from 'jwt-decode';
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
 import { Link } from 'react-router-dom';
-import Scarabee from "./Assets/ScarabeeDore.jpg";
+import Scarabee from "./Assets/scarabée doré or et bleu-Photoroom.jpg";
 
 const config = {
   clientId: "965666486369-9deuckjj3h7g4vr0f73mrk1vfv0trd4e.apps.googleusercontent.com",

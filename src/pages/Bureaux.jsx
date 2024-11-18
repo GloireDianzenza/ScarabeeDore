@@ -3,7 +3,7 @@ import { ListGroup,Button } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import "../css/bureau.css";
 import 'leaflet/dist/leaflet.css';
-import Scarabee from "../Assets/ScarabeeDore.jpg";
+import Scarabee from "../Assets/scarabée doré or et bleu-Photoroom.jpg";
 // const myIcon = new Icon({
 //  iconUrl: marker,
 //  iconSize: [32,32]

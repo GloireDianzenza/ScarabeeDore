@@ -4,7 +4,7 @@ import { Link, useNavigate } from 'react-router-dom';
 import AvisComponent from '../components/AvisComponent'
 import {correctUserToken} from "../App";
 import RangeSlider from 'react-bootstrap-range-slider';
-import Scarabee from "../Assets/ScarabeeDore.jpg";
+import Scarabee from "../Assets/scarabée doré or et bleu-Photoroom.jpg";
 
 function Avis() {
 
@@ -131,7 +131,7 @@ function Avis() {
             } catch (error) {
                 console.error(error);
                 if(error.error.errors){
-                  if(error.error.errors[0].message == "UserId must be unique"){
+                  if(error.error.errors[0].message === "UserId must be unique"){
                     alert("Un avis par utilisateur !")
                   }
                   else{
