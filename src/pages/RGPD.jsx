@@ -56,10 +56,12 @@ function RGPD() {
             </header>
             <main>
                 <h1 className='mb-4'>RGPD et la Confidentialité</h1>
-                <h2>En vigueur au 15/11/2022</h2>
+                <h2>En vigueur depuis 22 septembre 2023</h2>
                 <p className='mt-5'>Conformément aux dispositions des Articles 6-III et 19 de la Loi n°2004-575 du 21 juin 2004 pour la Confiance dans l’économie numérique, dite L.C.E.N., il est porté à la connaissance des utilisateurs et visiteurs, ci-après l’Utilisateur », de ce site , ci-après le « Site », les présentes mentions légales. <br /><br />
 
 La connexion et la navigation sur le Site par l’Utilisateur implique acceptation intégrale et sans réserve des présentes mentions légales. <br /><br />
+
+« Le site internet Scarabée doré » s'engage à ce que les traitements de données personnelles effectués sur scarabeedore.com soient conformes au règlement général sur la protection des données (RGPD) et à la loi Informatique et Libertés.<br/><br/>
 
 Ces dernières sont accessibles sur le Site à la rubrique « Mentions légales ».</p>
                 <h2>ARTICLE 1 – L’EDITEUR</h2>
@@ -70,18 +72,17 @@ Ces dernières sont accessibles sur le Site à la rubrique « Mentions légales 
 
                 78400 Chatou<br /><br />
 
-                SIRET :<br /><br />
+                SIRET: 948 947 288 00015<br /><br />
                 Code APE :  8559A Formation continue d’adultes.<br /><br />
                 N° TVA : Non assujetti<br /><br />
 
                 Téléphone : <a href="tel:0760231984">07.60.23.19.84</a><br /><br />
 
                 Adresse de courrier électronique : <a href="mailto:sandra.duarte79@gmail.com">sandra.duarte79@gmail.com</a><br /><br />
-                Directeur de la publication : <Link to={"/qui"}>Sandra Duarte</Link><br /><br />
-                Responsable du site : <Link to={"/qui"}>Sandra Duarte</Link><br /><br />
+                Directeur de la publication et responsable du site : <Link to={"/qui"}>Sandra Duarte</Link><br /><br />
                 </p>
                 <h2>ARTICLE 2 – L’HEBERGEUR</h2>
-                <p className='mt-5'>L’hébergeur du Site est la société WordPress.com, dont le siège social est situé au 60 29th Street #343 San Francisco, CA 94110 United States of America , avec le numéro de téléphone : <a href="tel:8772733049">(877) 273-3049</a> + adresse mail de contact : <a href="https://automattic.com/contact/" target='_blank' rel="noreferrer">https://automattic.com/contact/</a> <br /><br />
+                <p className='mt-5'>L’hébergeur du Site est la société  <br /><br />
 
 Conformément à l’article 6 de la Loi du 21 juin 2004 pour la confiance en l’économie numérique, l’hébergeur conservera vos données de connexion, couvertes par le secret professionnel et traitées dans le respect des dispositions légales en matière de données personnelles.</p>
                 <h2>ARTICLE 3 – ACCES AU SITE</h2>
@@ -96,7 +97,9 @@ En cas de modification, interruption ou suspension du Site, l’Editeur ne saura
 
 En vertu de la loi Informatique et Libertés, en date du 6 janvier 1978, l’Utilisateur dispose d’un droit d’accès, de rectification, de suppression et d’opposition de ses données personnelles. L’Utilisateur exerce ce droit : une demande sera rédigée à la main et envoyée par mail. <br /><br />
 
-Dans l’hypothèse où vous avez accepté dans nos formulaires de recevoir par email des informations et sollicitations commerciales émanant de notre société et de son réseau à entreprise individuelle Scarabée dorée vous aurez à tout moment la faculté de revenir sur cette décision, soit en cliquant sur le lien prévu à cet effet en bas des mails que vous recevez, soit en envoyant un mail avec pour objet « désabonnement » à l’adresse suivante : <a href="mailto:scarabee.dore21@gmail.com">scarabee.dore21@gmail.com</a>
+Dans l’hypothèse où vous avez accepté dans nos formulaires de recevoir par email des informations et sollicitations commerciales émanant de notre société et de son réseau à entreprise individuelle Scarabée dorée vous aurez à tout moment la faculté de revenir sur cette décision, soit en cliquant sur le lien prévu à cet effet en bas des mails que vous recevez, soit en envoyant un mail avec pour objet « désabonnement » à l’adresse suivante : <a href="mailto:scarabee.dore21@gmail.com">scarabee.dore21@gmail.com</a> <br/><br/>
+
+Le traitement a pour objet <b>la gestion des abonnements et des entretiens gratuits de 15 minutes de coaching.</b>
                 </p>
                 <h3>Durée de conservation </h3>
 

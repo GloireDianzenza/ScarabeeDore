@@ -249,7 +249,7 @@ function MeetingForm({meetingDate,setDate,meetingHour,meetingMinute,setHour,setM
       
       apiCalendar.createEvent(newEvent).then(data=>{
           // window.location = "mailto:scarabee.dore21@gmail.com?subject=Demande de rendez-vous&body=Bonjour je souhaite programmer un rendez-vous pour "+meetingDate.toLocaleDateString()+" à "+meetingHour.toString();
-          emailjs.send("service_vh72w4k","template_s6d9i0s",{from_name:firstName+" "+lastName,to_name:"Sandra Duarte",subject:"Demande de rendez-vous",message:"Bonjour je souhaite programmer un rendez-vous pour "+meetingDate.toLocaleDateString()+" à "+meetingHour.toString()})
+          emailjs.send("service_vh72w4k","template_s6d9i0s",{from_name:firstName+" "+lastName,to_name:"Sandra Duarte",subject:"Demande de rendez-vous",message:"Bonjour je souhaite programmer un rendez-vous pour "+meetingDate.toLocaleDateString()+" à "+meetingHour.toString()+":"+meetingMinute.toString()})
           .then(status=>{
             if(status.text === "OK"){
               console.log("Success");
@@ -464,8 +464,8 @@ function App() {
           <div className='step'>
             <div className='left'>
               <h3>Qu'est-ce qu'un coach en développement personnel et professionnel ? </h3>
-              <span>Un coach en développement personnel est une personne qui aide les autres à mieux se connaître et à atteindre leurs objectifs. Cela peut sembler un peu flou au début, mais imaginez un guide qui vous accompagne dans un voyage important de votre vie. Ce voyage pourrait être sur le plan émotionnel, professionnel ou même physique. Le coach pose des questions pour vous aider à réfléchir à ce que vous voulez vraiment pourquoi c'est important pour vous. Grâce à ces discussions, vous pouvez découvrir vos passions cachées, travailler sur vos peurs ou développer des compétences que vous n'aviez jamais envisagées auparavant.
-En fin de compte, avoir un coach en développement personnel, c'est comme avoir un ami bienveillant qui veut vous voir réussir. Ils ne prennent pas les décisions pour vous, mais ils vous encouragent et vous donnent des outils pour avancer. Parfois, nous avons besoin d'un petit coup de pouce pour croire en nous-mêmes et comprendre nos capacités. Un bon coach sait écouter, poser les bonnes questions et créer un environnement sûr où l'on peut s'exprimer sans jugement. En travaillant ensemble, on peut transformer des rêves vagues en réalités tangibles.
+              <span>Un coach en développement personnel est une personne qui aide les autres à mieux se connaître et à atteindre leurs objectifs. <br/> Cela peut sembler un peu flou au début, mais imaginez un guide qui vous accompagne dans un voyage important de votre vie. <br/> Ce voyage pourrait être sur le plan émotionnel, professionnel ou même physique. <br/> Le coach pose des questions pour vous aider à réfléchir à ce que vous voulez vraiment pourquoi c'est important pour vous. <br/>Grâce à ces discussions, vous pouvez découvrir vos passions cachées, travailler sur vos peurs ou développer des compétences que vous n'aviez jamais envisagées auparavant. <br/>
+En fin de compte, avoir un coach en développement personnel, c'est comme avoir un ami bienveillant qui veut vous voir réussir. <br/> Ils ne prennent pas les décisions pour vous, mais ils vous encouragent et vous donnent des outils pour avancer.<br/> Parfois, nous avons besoin d'un petit coup de pouce pour croire en nous-mêmes et comprendre nos capacités. <br/>Un bon coach sait écouter, poser les bonnes questions et créer un environnement sûr où l'on peut s'exprimer sans jugement. <br/>En travaillant ensemble, on peut transformer des rêves vagues en réalités tangibles.
 </span>
             </div>
           </div>

@@ -357,8 +357,9 @@ main button{
 
 .step span{
   font-size: 1.1rem !important;
-  padding: 15px;
+  padding: 3px;
   text-wrap: pretty;
+  text-align: left;
 }
 
 .step .right{
