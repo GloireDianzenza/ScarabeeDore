@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/ScarabeeDore/static/css/main.5fe2efa6.css",
-    "main.js": "/ScarabeeDore/static/js/main.425a1b63.js",
+    "main.css": "/ScarabeeDore/static/css/main.1154e5ce.css",
+    "main.js": "/ScarabeeDore/static/js/main.f994c9c0.js",
     "static/js/453.7719298e.chunk.js": "/ScarabeeDore/static/js/453.7719298e.chunk.js",
     "static/media/Crois en tes rêves.png": "/ScarabeeDore/static/media/Crois en tes rêves.a4caa9cf7af014c1bf4f.png",
     "static/media/boxicons.svg": "/ScarabeeDore/static/media/boxicons.9e2b21b135bc7d4c803f.svg",
@@ -20,12 +20,12 @@
     "index.html": "/ScarabeeDore/index.html",
     "static/media/location.svg": "/ScarabeeDore/static/media/location.351870b901810823cc7d.svg",
     "static/media/star.svg": "/ScarabeeDore/static/media/star.daa0330fa0faf9acb38d.svg",
-    "main.5fe2efa6.css.map": "/ScarabeeDore/static/css/main.5fe2efa6.css.map",
-    "main.425a1b63.js.map": "/ScarabeeDore/static/js/main.425a1b63.js.map",
+    "main.1154e5ce.css.map": "/ScarabeeDore/static/css/main.1154e5ce.css.map",
+    "main.f994c9c0.js.map": "/ScarabeeDore/static/js/main.f994c9c0.js.map",
     "453.7719298e.chunk.js.map": "/ScarabeeDore/static/js/453.7719298e.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.5fe2efa6.css",
-    "static/js/main.425a1b63.js"
+    "static/css/main.1154e5ce.css",
+    "static/js/main.f994c9c0.js"
   ]
 }
