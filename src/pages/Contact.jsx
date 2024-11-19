@@ -84,6 +84,8 @@ function Contact() {
        */
       function meetingSubmit(event){
           event.preventDefault();
+          const formData = new FormData(event.target);
+          const entries = Object.fromEntries(formData.entries());
       }
 
       useEffect(()=>{
@@ -94,24 +96,25 @@ function Contact() {
         <Form onSubmit={meetingSubmit} className='meeting-form'>
             <Form.Group controlId='nom2'>
                 <Form.Label>Nom</Form.Label>
-                <Form.Control name='nom' placeholder='Nom'/>
+                <Form.Control name='nom' placeholder='Nom' required/>
             </Form.Group>
             <Form.Group controlId='prenom2'>
                 <Form.Label>Prénom</Form.Label>
-                <Form.Control name='prenom' placeholder='Prénom'/>
+                <Form.Control name='prenom' placeholder='Prénom' required/>
             </Form.Group>
             <Form.Group controlId='motif' className='textarea-group'>
                 <Form.Label>Motif du rendez-vous</Form.Label>
-                <Form.Control as={"textarea"} name='motif' placeholder='Motif'/>
+                <Form.Control as={"textarea"} name='motif' placeholder='Motif' required/>
             </Form.Group>
             <Form.Group controlId='date' className='textarea-group'>
                 <Form.Label>Calendrier</Form.Label>
-                <DatePicker showTimeInput dateFormat={"dd/MM/yyyy"} selected={date} onChange={(dte,event)=>{
+                <DatePicker required showTimeInput dateFormat={"dd/MM/yyyy"} selected={date} onChange={(dte,event)=>{
                   setHour(dte.getHours());
                   setMinute(dte.getMinutes());
                   setDate(dte);
                 }}/>
             </Form.Group>
+            <Button type='submit'>Demander rendez-vous</Button>
         </Form>
       )
     }
