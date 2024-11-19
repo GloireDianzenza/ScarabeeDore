@@ -1,13 +1,15 @@
 {
   "files": {
-    "main.css": "/ScarabeeDore/static/css/main.1154e5ce.css",
-    "main.js": "/ScarabeeDore/static/js/main.f994c9c0.js",
+    "main.css": "/ScarabeeDore/static/css/main.093990f2.css",
+    "main.js": "/ScarabeeDore/static/js/main.a7b41742.js",
     "static/js/453.7719298e.chunk.js": "/ScarabeeDore/static/js/453.7719298e.chunk.js",
     "static/media/Crois en tes rêves.png": "/ScarabeeDore/static/media/Crois en tes rêves.a4caa9cf7af014c1bf4f.png",
     "static/media/boxicons.svg": "/ScarabeeDore/static/media/boxicons.9e2b21b135bc7d4c803f.svg",
+    "static/media/logo définitif2.png": "/ScarabeeDore/static/media/logo définitif2.09abb3ff496df030db37.png",
     "static/media/boxicons.eot": "/ScarabeeDore/static/media/boxicons.65a8ce52fc5427e8f94d.eot",
     "static/media/boxicons.woff": "/ScarabeeDore/static/media/boxicons.d12afc36557395143e4b.woff",
     "static/media/boxicons.ttf": "/ScarabeeDore/static/media/boxicons.db9ddb1898dbd76badca.ttf",
+    "static/media/CONTACT.docx": "/ScarabeeDore/static/media/CONTACT.4f96ac4c5f88a0114663.docx",
     "static/media/freepik__rich-textured-brushstrokes-with-deep-colors-and-a-__41823.jpeg": "/ScarabeeDore/static/media/freepik__rich-textured-brushstrokes-with-deep-colors-and-a-__41823.1e9c9ac9c3dea476461c.jpeg",
     "static/media/ScarabeeDore.jpg": "/ScarabeeDore/static/media/ScarabeeDore.0aaa0f3a242b0a14523a.jpg",
     "static/media/boxicons.woff2": "/ScarabeeDore/static/media/boxicons.df635aaf04cd75132f62.woff2",
@@ -20,12 +22,12 @@
     "index.html": "/ScarabeeDore/index.html",
     "static/media/location.svg": "/ScarabeeDore/static/media/location.351870b901810823cc7d.svg",
     "static/media/star.svg": "/ScarabeeDore/static/media/star.daa0330fa0faf9acb38d.svg",
-    "main.1154e5ce.css.map": "/ScarabeeDore/static/css/main.1154e5ce.css.map",
-    "main.f994c9c0.js.map": "/ScarabeeDore/static/js/main.f994c9c0.js.map",
+    "main.093990f2.css.map": "/ScarabeeDore/static/css/main.093990f2.css.map",
+    "main.a7b41742.js.map": "/ScarabeeDore/static/js/main.a7b41742.js.map",
     "453.7719298e.chunk.js.map": "/ScarabeeDore/static/js/453.7719298e.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.1154e5ce.css",
-    "static/js/main.f994c9c0.js"
+    "static/css/main.093990f2.css",
+    "static/js/main.a7b41742.js"
   ]
 }
