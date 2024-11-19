@@ -125,9 +125,15 @@ Il permet: <br /><br />
             </p>
             <h2>ARTICLE 7 - MODALITE D’UTILISATION</h2>
             <p className="mt-5">
-            Le site : www.scarabeedore.com  est propriétaire des droits de propriété intellectuelle et détient les droits d’usage sur tous les éléments accessibles sur le site internet, notamment les textes, images, graphismes, logos, vidéos, icônes et sons. <br /><br />
+            Le site : <a href="https://gloiredianzenza.github.io/ScarabeeDore/ " target='_blank' rel='noreferrer'>https://gloiredianzenza.github.io/ScarabeeDore/ </a> est propriétaire des droits de propriété intellectuelle et détient les droits d’usage sur tous les éléments accessibles sur le site internet, notamment les textes, images, graphismes, logos, vidéos, icônes et sons. <br /><br />
 
             Toute utilisation, reproduction, diffusion, commercialisation, modification de toute ou partie du Site﻿, sans autorisation de l’Editeur est prohibée et pourra entraînée des actions et poursuites judiciaires telles que notamment prévues par le Code de la propriété intellectuelle et le Code civil.
+            </p>
+            <h2>ARTICLE 8 - SECURITE</h2>
+            <p>
+            Nous surveillons les failles de sécurité et essayons de les prévenir. <br /><br /> Veuillez utiliser les fonctionnalités de sécurité disponibles par le biais de nos Services. <br /><br />
+Nous mettons en œuvre des mesures de sécurité conçues pour protéger vos données, telles que HTTPS. <br /><br /> Nous surveillons régulièrement nos systèmes à la recherche d’éventuelles vulnérabilités et attaques. <br /><br /> Cependant, nous ne pouvons pas garantir la sécurité des informations que vous nous envoyez. <br /><br /> Il n’y a aucune garantie que les données ne puissent pas être consultées, divulguées, modifiées ou détruites par violation de l’une de nos garanties physiques, techniques ou managériales. <br /><br />
+
             </p>
             </main>
             <FooterComponent/>
