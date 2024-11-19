@@ -19,7 +19,7 @@ function Formation() {
               </ListGroup>
             </ListGroup.Item>
             <ListGroup.Item as={"li"} active={true}><Button variant='link' href='#top'>Formation</Button></ListGroup.Item>
-            <ListGroup.Item as={"li"}><Link to={"/#formManager"}><Button variant='link'>Contactez-nous</Button></Link></ListGroup.Item>
+            <ListGroup.Item as={"li"}><Link to={"/contact"}><Button variant='link'>Contactez-nous</Button></Link></ListGroup.Item>
           </ListGroup>
         )
     }
