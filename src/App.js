@@ -15,7 +15,8 @@ import { jwtDecode } from 'jwt-decode';
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
 import { Link } from 'react-router-dom';
-import Scarabee from "./Assets/scarabée doré or et bleu-Photoroom.jpg";
+import Scarabee from "./Assets/logo définitif2.png";
+import emailjs from "@emailjs/browser";
 
 const config = {
   clientId: "965666486369-9deuckjj3h7g4vr0f73mrk1vfv0trd4e.apps.googleusercontent.com",
@@ -248,6 +249,7 @@ function MeetingForm({meetingDate,setDate,meetingHour,meetingMinute,setHour,setM
       
       apiCalendar.createEvent(newEvent).then(data=>{
           alert("Rendez-vous fixé à la date: "+meetingDate.toLocaleDateString());
+          window.location = "mailto:scarabee.dore21@gmail.com?subject=Demande de rendez-vous&body=Bonjour je souhaite programmer un rendez-vous pour "+meetingDate.toLocaleDateString()+" à "+meetingHour.toString();
       }).catch(error=>{
         console.error(error);
         alert("Le rendez-vous n'a pas pu être fixé: "+error);
@@ -402,7 +404,7 @@ function HeaderList(){
         </ListGroup>
       </ListGroup.Item>
       <ListGroup.Item as={"li"}><Link to={"/formation"}><Button variant='link'>Formation</Button></Link></ListGroup.Item>
-      <ListGroup.Item as={"li"}><Button variant='link' href='#formManager'>Contactez-nous</Button></ListGroup.Item>
+      <ListGroup.Item as={"li"}><Link to={"/contact"}><Button variant='link'>Contactez-nous</Button></Link></ListGroup.Item>
     </ListGroup>
   )
 }
@@ -415,6 +417,7 @@ function App() {
   
   useEffect(()=>{
     sessionStorage.clear();
+    emailjs.init({publicKey:"SSiXGzf6UUP-YqBH8"});
   },[])
 
   return (

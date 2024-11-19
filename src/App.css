@@ -28,7 +28,7 @@ main > p{
   padding-right: 15px !important;
 }
 
-.App *:not(header h1,button,i,.inner-blog *,a,.bolding,input,form h2){
+.App *:not(header h1,button,i,.inner-blog *,a,.bolding,input,form *){
   color: white !important;
 }
 
@@ -162,7 +162,7 @@ form,form *{
   border-radius: 7px;
 }
 
-:not(.exclude) input:not(.range-slider),input:placeholder-shown,input:not(.range-slider){
+:not(.exclude) input:not(.range-slider):not([type=checkbox]),input:placeholder-shown,input:not(.range-slider){
   border-radius: 15px !important;
   background-color: var(--contrast-2) !important;
 }
@@ -433,7 +433,7 @@ form > div{
   height: 700px;
 }
 
-form input{
+form input:not([type=checkbox]){
   width: 65% !important;
 }
 

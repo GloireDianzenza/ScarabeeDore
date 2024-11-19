@@ -1,8 +1,9 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect } from 'react';
 import { ListGroup,Button, Form } from 'react-bootstrap';
-import { Link, useNavigate } from 'react-router-dom';
-import Scarabee from "../Assets/scarabée doré or et bleu-Photoroom.jpg";
+import { Link } from 'react-router-dom';
+import Scarabee from "../Assets/logo définitif2.png";
 import "../css/contact.css";
+import emailjs from "@emailjs/browser";
 
 function Contact() {
 
@@ -43,6 +44,23 @@ function Contact() {
           </footer>
         )
       }
+
+    useEffect(()=>{
+      emailjs.init({publicKey:"SSiXGzf6UUP-YqBH8"});
+    },[])
+
+    /**
+     * 
+     * @param {import('react').BaseSyntheticEvent} event 
+     */
+    function handleSubmit(event){
+        event.preventDefault();
+        const formData = new FormData(event.target);
+        const entries = Object.fromEntries(formData.entries());
+        if(entries.consent || entries.consent === "on"){
+            window.location = "mailto:scarabeedore21@gmail.com?subject=Contact%20Scarabée%20Doré&body="+entries.message;
+        }
+    }
     
     return (<div className='contact App'>
             <div id='top'></div>
@@ -57,12 +75,31 @@ function Contact() {
             </header>
             <main>
                 <h1 className='mb-4'>Contactez-moi</h1>
-                <Form>
-                    <h2>Vous devez vous identifiez pour pouvoir laisser un avis</h2>
+                <Form onSubmit={handleSubmit}>
+                    <span className=''>Vous pouvez me joindre pour une prise de rendez-vous ou pour toute question.</span>
+                    <span>Téléphone: <a href="tel:0760231984">07.60.23.19.84</a></span>
                     <Form.Group controlId='nom'>
                       <Form.Label>Nom</Form.Label>
                       <Form.Control name='nom' placeholder='Nom'/>
                     </Form.Group>
+                    <Form.Group controlId='prenom'>
+                      <Form.Label>Prénom</Form.Label>
+                      <Form.Control name='prenom' placeholder='Prénom'/>
+                    </Form.Group>
+                    <Form.Group controlId='email'>
+                      <Form.Label>Email *</Form.Label>
+                      <Form.Control name='email' type='email' required placeholder='Adresse email'/>
+                    </Form.Group>
+                    <Form.Group controlId='message' className='textarea-group'>
+                      <Form.Label>Message *</Form.Label>
+                      <Form.Control as={"textarea"} name='message' required placeholder='Message'/>
+                    </Form.Group>
+                    <h3>Accord RGPD</h3>
+                    <Form.Group controlId='consent'>
+                        <Form.Check type='checkbox' required name='consent' label={"En utilisant ce formulaire de contact, vous consentez à la collecte et au traitement des informations que vous fournissez, telles que votre nom, votre adresse e-mail et tout autre détail que vous choisissez de partager avec nous. Ces informations sont collectées dans le seul but de répondre à votre demande et de fournir un service clientèle de qualité. Vos données ne seront pas utilisées à d’autres fins sans votre consentement explicite. Pour plus d’information sur la manière dont nous traitons vos données personnelles, veuillez consulter notre politique de confidentialité."}/>
+                    </Form.Group>
+                    <span>* Obligatoire</span>
+                    <Button type='submit'>Envoyer</Button>
                 </Form>
             </main>
             <FooterComponent/>

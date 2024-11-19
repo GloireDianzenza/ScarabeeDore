@@ -4,7 +4,7 @@ import { Link, useNavigate } from 'react-router-dom';
 import AvisComponent from '../components/AvisComponent'
 import {correctUserToken} from "../App";
 import RangeSlider from 'react-bootstrap-range-slider';
-import Scarabee from "../Assets/scarabée doré or et bleu-Photoroom.jpg";
+import Scarabee from "../Assets/logo définitif2.png";
 
 function Avis() {
 

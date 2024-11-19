@@ -1,6 +1,13 @@
-form{
+.contact main form{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
     background-color: #ecc440 !important;
     padding: 20px !important;
+    *{
+        color:black !important;
+    }
     h2{
         color: black !important;
     }
@@ -10,5 +17,16 @@ form{
 
     label{
         font-size: 20px !important;
+    }
+
+    .textarea-group{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    input[type=checkbox]{
+        border-radius: 2px !important;
+        cursor: pointer;
     }
 }

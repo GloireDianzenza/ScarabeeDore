@@ -2,7 +2,7 @@ import React from 'react';
 import { Button, ListGroup } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import Sandra from "../Assets/Untitled_Message/Crois en tes rêves.png";
-import Scarabee from "../Assets/scarabée doré or et bleu-Photoroom.jpg";
+import Scarabee from "../Assets/logo définitif2.png";
 
 function QuiSuisJe() {
 

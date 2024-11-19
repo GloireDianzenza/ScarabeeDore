@@ -2,8 +2,7 @@ import React from 'react';
 import { Button, ListGroup, ListGroupItem } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import "../css/formation.css";
-import { Icon } from '../components/index.ts';
-import Scarabee from "../Assets/scarabée doré or et bleu-Photoroom.jpg";
+import Scarabee from "../Assets/logo définitif2.png";
 
 function Formation() {
 
