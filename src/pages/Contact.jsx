@@ -107,7 +107,7 @@ function Contact() {
 
       return (
         <Form onSubmit={meetingSubmit} className='meeting-form' style={{background:"transparent"}}>
-            <Button type='submit'>Demander rendez-vous</Button>
+            <Button type='submit'>Prise de rendez-vous</Button>
         </Form>
       )
     }

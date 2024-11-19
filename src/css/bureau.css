@@ -16,9 +16,10 @@
     height: 100% !important;
 }
 
-footer a{
+footer a,footer a button{
     color: white !important;
     text-decoration: none !important;
+    font-size: 21px !important;
 }
 footer a:hover{
     color: yellow !important;

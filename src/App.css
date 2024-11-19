@@ -146,7 +146,7 @@ h3{
 }
 
 .list-group button,.list-group a{
-  font-size: 18px;
+  font-size: 25px !important;
   font-family: "Baskervill Old Face",sans-serif;
 }
 

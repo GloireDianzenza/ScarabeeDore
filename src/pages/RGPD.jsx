@@ -117,7 +117,7 @@ Il permet: <br /><br />
 <p className=''>Les données seront sauvegardées durant une durée maximale de 3 ans.</p>
             <h2>ARTICLE 5 - MEDIATEUR DE LA CONSOMMATION</h2>
             <p className="mt-5">
-                Médiation des litiges de la consommation : Conformément aux dispositions du Code de la consommation (article L.612-1 à L.613-3)) concernant « le processus de médiation des litiges de la consommation », le client a le droit de recourir gratuitement au service de médiation proposé par <b>Sandra DUARTE</b>. Le médiateur « droit de la consommation » ainsi proposé est AMBO dont l’adresse email est la suivante : mediation.conso@ambo.bzh
+                Médiation des litiges de la consommation : Conformément aux dispositions du Code de la consommation (article L.612-1 à L.613-3)) concernant « le processus de médiation des litiges de la consommation », le client a le droit de recourir gratuitement au service de médiation proposé par <b>Sandra DUARTE</b>. Le médiateur « droit de la consommation » ainsi proposé est <b>AMBO</b> dont l’adresse email est la suivante : <a href="mailto:mediation.conso@ambo.bzh">mediation.conso@ambo.bzh</a>
             </p>
             <h2>ARTICLE 6 - INFORMATIONS RELATIVES A VOTRE DROIT DE REFUSER LE DEMARCHAGE TELEPHONIQUE.</h2>
             <p className="mt-5">
@@ -125,6 +125,8 @@ Il permet: <br /><br />
             </p>
             <h2>ARTICLE 7 - MODALITE D’UTILISATION</h2>
             <p className="mt-5">
+            Le site : www.scarabeedore.com  est propriétaire des droits de propriété intellectuelle et détient les droits d’usage sur tous les éléments accessibles sur le site internet, notamment les textes, images, graphismes, logos, vidéos, icônes et sons. <br /><br />
+
             Toute utilisation, reproduction, diffusion, commercialisation, modification de toute ou partie du Site﻿, sans autorisation de l’Editeur est prohibée et pourra entraînée des actions et poursuites judiciaires telles que notamment prévues par le Code de la propriété intellectuelle et le Code civil.
             </p>
             </main>
