@@ -99,14 +99,25 @@ En vertu de la loi Informatique et Libertés, en date du 6 janvier 1978, l’Uti
 
 Dans l’hypothèse où vous avez accepté dans nos formulaires de recevoir par email des informations et sollicitations commerciales émanant de notre société et de son réseau à entreprise individuelle Scarabée dorée vous aurez à tout moment la faculté de revenir sur cette décision, soit en cliquant sur le lien prévu à cet effet en bas des mails que vous recevez, soit en envoyant un mail avec pour objet « désabonnement » à l’adresse suivante : <a href="mailto:scarabee.dore21@gmail.com">scarabee.dore21@gmail.com</a> <br/><br/>
 
-Le traitement a pour objet <b>la gestion des abonnements et des entretiens gratuits de 15 minutes de coaching.</b>
+Le traitement a pour objet <b>la gestion des abonnements et des entretiens gratuits de 15 minutes de coaching.</b> <br /><br />
+
+Il permet: <br /><br />
+
+                  <ul>
+                    <li>La gestion des abonnements</li>
+                    <li>La gestion des rendez-vous entre l’internaute et le coach <b>Sandra DUARTE</b> qui va le prendre en charge</li>
+                    <li>L’élaboration de statistiques liées au service.</li>
+                  </ul>
+                  <br /><br />
+                  Aucunes des données ne seront « commercialisées » en France ni à l’étranger.
                 </p>
+                
                 <h3>Durée de conservation </h3>
 
 <p className=''>Les données seront sauvegardées durant une durée maximale de 3 ans.</p>
             <h2>ARTICLE 5 - MEDIATEUR DE LA CONSOMMATION</h2>
             <p className="mt-5">
-            Médiation des litiges de la consommation : Conformément aux dispositions du Code de la consommation (article L.612-1 à L.613-3)) concernant « le processus de médiation des litiges de la consommation », le client a le droit de recourir gratuitement au service de médiation proposé par Sandra DUARTE. Le médiateur « droit de la consommation » ainsi proposé est ANM (association nationale des médiateurs). Procédure de recours : <a href="https://www.anm-conso.com/anm-conso/assets/site/documents/reglement-interne-de-procedure.pdf">https://www.anm-conso.com/anm-conso/assets/site/documents/reglement-interne-de-procedure.pdf</a>
+                Médiation des litiges de la consommation : Conformément aux dispositions du Code de la consommation (article L.612-1 à L.613-3)) concernant « le processus de médiation des litiges de la consommation », le client a le droit de recourir gratuitement au service de médiation proposé par <b>Sandra DUARTE</b>. Le médiateur « droit de la consommation » ainsi proposé est AMBO dont l’adresse email est la suivante : mediation.conso@ambo.bzh
             </p>
             <h2>ARTICLE 6 - INFORMATIONS RELATIVES A VOTRE DROIT DE REFUSER LE DEMARCHAGE TELEPHONIQUE.</h2>
             <p className="mt-5">

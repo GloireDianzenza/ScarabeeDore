@@ -249,7 +249,7 @@ function MeetingForm({meetingDate,setDate,meetingHour,meetingMinute,setHour,setM
       
       apiCalendar.createEvent(newEvent).then(data=>{
           // window.location = "mailto:scarabee.dore21@gmail.com?subject=Demande de rendez-vous&body=Bonjour je souhaite programmer un rendez-vous pour "+meetingDate.toLocaleDateString()+" à "+meetingHour.toString();
-          emailjs.send("service_vh72w4k","template_s6d9i0s",{from_name:firstName+" "+lastName,to_name:"Sandra Duarte",subject:"Demande de rendez-vous",message:"Bonjour je souhaite programmer un rendez-vous pour "+meetingDate.toLocaleDateString()+" à "+meetingHour.toString()+":"+meetingMinute.toString()})
+          emailjs.send("service_vh72w4k","template_s6d9i0s",{from_name:firstName+" "+lastName,to_name:"Sandra Duarte",subject:"Demande de rendez-vous",message:"Bonjour je souhaite programmer un rendez-vous pour le "+meetingDate.toLocaleDateString()+" à "+meetingHour.toString()+":"+meetingMinute.toString()})
           .then(status=>{
             if(status.text === "OK"){
               console.log("Success");
@@ -312,7 +312,8 @@ function MeetingForm({meetingDate,setDate,meetingHour,meetingMinute,setHour,setM
 }
 
 function MeetingModalFunction(){
-  document.querySelector(".modal").classList.add("show-modal");
+  // document.querySelector(".modal").classList.add("show-modal");
+  window.location = "https://calendar.app.google/o3JkxjRZfrqUKpH16";
 }
 
 function CloseModalFunction(){

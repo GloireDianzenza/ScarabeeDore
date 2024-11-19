@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/ScarabeeDore/static/css/main.93616f02.css",
-    "main.js": "/ScarabeeDore/static/js/main.bf4e46c9.js",
+    "main.css": "/ScarabeeDore/static/css/main.df2cc2d6.css",
+    "main.js": "/ScarabeeDore/static/js/main.830a1e32.js",
     "static/js/453.7719298e.chunk.js": "/ScarabeeDore/static/js/453.7719298e.chunk.js",
     "static/media/Crois en tes rêves.png": "/ScarabeeDore/static/media/Crois en tes rêves.a4caa9cf7af014c1bf4f.png",
     "static/media/boxicons.svg": "/ScarabeeDore/static/media/boxicons.9e2b21b135bc7d4c803f.svg",
@@ -19,15 +19,16 @@
     "static/media/8578835e-a0ac-42c3-a67c-08b39bab073d.jpg": "/ScarabeeDore/static/media/8578835e-a0ac-42c3-a67c-08b39bab073d.3893ebc8e0a0c6c7ac31.jpg",
     "static/media/freepik__3d-model-serene-cinematic-high-angle-forced-perspe__30240.jpeg": "/ScarabeeDore/static/media/freepik__3d-model-serene-cinematic-high-angle-forced-perspe__30240.eb2fd00b3558e580f3c5.jpeg",
     "static/media/baskerville-old-face.ttf": "/ScarabeeDore/static/media/baskerville-old-face.1b983a8f0d42378ce222.ttf",
+    "static/media/RGPD.docx": "/ScarabeeDore/static/media/RGPD.b02616b9e7e517a345e1.docx",
     "index.html": "/ScarabeeDore/index.html",
     "static/media/location.svg": "/ScarabeeDore/static/media/location.351870b901810823cc7d.svg",
     "static/media/star.svg": "/ScarabeeDore/static/media/star.daa0330fa0faf9acb38d.svg",
-    "main.93616f02.css.map": "/ScarabeeDore/static/css/main.93616f02.css.map",
-    "main.bf4e46c9.js.map": "/ScarabeeDore/static/js/main.bf4e46c9.js.map",
+    "main.df2cc2d6.css.map": "/ScarabeeDore/static/css/main.df2cc2d6.css.map",
+    "main.830a1e32.js.map": "/ScarabeeDore/static/js/main.830a1e32.js.map",
     "453.7719298e.chunk.js.map": "/ScarabeeDore/static/js/453.7719298e.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.93616f02.css",
-    "static/js/main.bf4e46c9.js"
+    "static/css/main.df2cc2d6.css",
+    "static/js/main.830a1e32.js"
   ]
 }

@@ -95,36 +95,7 @@ function Contact() {
        */
       function meetingSubmit(event){
           event.preventDefault();
-          const formData = new FormData(event.target);
-          const entries = Object.fromEntries(formData.entries());
-          apiCalendar.handleAuthClick().then(()=>{
-            date.setHours(hour+1);
-            date.setMinutes(minute);
-            const newEvent = {
-              summary:"Rendez-vous avec Sandra Duarte de Scarabée Dorée",
-              start:{timeZone:"Europe/Paris",dateTime:date.toISOString()},
-              end:{timeZone:"Europe/Paris",dateTime:new Date(date.getTime()+(1000*(60*15))).toISOString()}
-            }
-            
-            apiCalendar.createEvent(newEvent)
-            .then(data=>{
-                console.log(data);
-                emailjs.send("service_vh72w4k","template_s6d9i0s",{to_name:"Sandra Duarte",from_name:entries.prenom+" "+entries.nom,subject:"Demande de rendez-vous",message:entries.message})
-                .then(status=>{
-                  if(status.text === "OK"){
-                    console.log("Success");
-                    alert("Rendez-vous fixé à la date: "+date.toLocaleDateString());
-                  }
-                })
-                .catch(error=>{
-                  throw error;
-                })
-            })
-            .catch(error=>{
-              console.error(error);
-              alert("Le rendez-vous n'a pas pu être fixé: "+error);
-            })
-          }).catch(error=>console.error(error));
+          window.location = "https://calendar.app.google/o3JkxjRZfrqUKpH16";
       }
 
       useEffect(()=>{
@@ -135,31 +106,7 @@ function Contact() {
       },[])
 
       return (
-        <Form onSubmit={meetingSubmit} className='meeting-form'>
-            <Form.Group controlId='nom2'>
-                <Form.Label>Nom</Form.Label>
-                <Form.Control name='nom' placeholder='Nom' required/>
-            </Form.Group>
-            <Form.Group controlId='prenom2'>
-                <Form.Label>Prénom</Form.Label>
-                <Form.Control name='prenom' placeholder='Prénom' required/>
-            </Form.Group>
-            <Form.Group controlId='phone2'>
-                <Form.Label>Numéro de téléphone</Form.Label>
-                <Form.Control name='phone' placeholder='Téléphone'/>
-            </Form.Group>
-            <Form.Group controlId='motif' className='textarea-group'>
-                <Form.Label>Motif du rendez-vous</Form.Label>
-                <Form.Control as={"textarea"} name='motif' placeholder='Motif' required/>
-            </Form.Group>
-            <Form.Group controlId='date' className='textarea-group'>
-                <Form.Label>Calendrier</Form.Label>
-                <DatePicker required showTimeInput dateFormat={"dd/MM/yyyy"} selected={date} onChange={(dte,event)=>{
-                  setHour(dte.getHours());
-                  setMinute(dte.getMinutes());
-                  setDate(dte);
-                }}/>
-            </Form.Group>
+        <Form onSubmit={meetingSubmit} className='meeting-form' style={{background:"transparent"}}>
             <Button type='submit'>Demander rendez-vous</Button>
         </Form>
       )
