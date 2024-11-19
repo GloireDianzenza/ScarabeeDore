@@ -1,9 +1,12 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import { ListGroup,Button, Form } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import Scarabee from "../Assets/logo définitif2.png";
 import "../css/contact.css";
 import emailjs from "@emailjs/browser";
+import ApiCalendar from "react-google-calendar-api";
+import DatePicker from "react-datepicker";
+import "react-datepicker/dist/react-datepicker.css";
 
 function Contact() {
 
@@ -71,6 +74,10 @@ function Contact() {
 
     function MeetingForm(){
 
+      const [date,setDate] = useState(new Date());
+      const [hour,setHour] = useState(9);
+      const [minute,setMinute] = useState(0);
+
       /**
        * 
        * @param {import('react').BaseSyntheticEvent} event 
@@ -79,8 +86,33 @@ function Contact() {
           event.preventDefault();
       }
 
+      useEffect(()=>{
+
+      },[hour,minute])
+
       return (
-        <Form onSubmit={meetingSubmit}></Form>
+        <Form onSubmit={meetingSubmit} className='meeting-form'>
+            <Form.Group controlId='nom2'>
+                <Form.Label>Nom</Form.Label>
+                <Form.Control name='nom' placeholder='Nom'/>
+            </Form.Group>
+            <Form.Group controlId='prenom2'>
+                <Form.Label>Prénom</Form.Label>
+                <Form.Control name='prenom' placeholder='Prénom'/>
+            </Form.Group>
+            <Form.Group controlId='motif' className='textarea-group'>
+                <Form.Label>Motif du rendez-vous</Form.Label>
+                <Form.Control as={"textarea"} name='motif' placeholder='Motif'/>
+            </Form.Group>
+            <Form.Group controlId='date' className='textarea-group'>
+                <Form.Label>Calendrier</Form.Label>
+                <DatePicker showTimeInput dateFormat={"dd/MM/yyyy"} selected={date} onChange={(dte,event)=>{
+                  setHour(dte.getHours());
+                  setMinute(dte.getMinutes());
+                  setDate(dte);
+                }}/>
+            </Form.Group>
+        </Form>
       )
     }
     
