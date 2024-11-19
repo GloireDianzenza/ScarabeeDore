@@ -18,7 +18,7 @@ function Contact() {
               </ListGroup>
             </ListGroup.Item>
             <ListGroup.Item as={"li"}><Link to={"/formation"}><Button variant='link'>Formation</Button></Link></ListGroup.Item>
-            <ListGroup.Item as={"li"}><Link to={"/#formManager"}><Button variant='link'>Contactez-nous</Button></Link></ListGroup.Item>
+            <ListGroup.Item as={"li"}><Button variant='link' href='#top'>Contactez-nous</Button></ListGroup.Item>
           </ListGroup>
         )
     }
@@ -28,7 +28,7 @@ function Contact() {
           <footer>
             <div className='left'>
               <Link to={"/qui"}><Button variant='link'>Qui suis-je ?</Button></Link>
-              <Button variant='link' href='#top'>Avis des clients</Button>
+              <Link to={"/avis"}><Button variant='link'>Avis des clients</Button></Link>
               <a href='#top'><Button variant='link'>A propos</Button></a>
             </div>
             <div className='middle'>
