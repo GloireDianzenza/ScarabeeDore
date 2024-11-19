@@ -58,8 +58,30 @@ function Contact() {
         const formData = new FormData(event.target);
         const entries = Object.fromEntries(formData.entries());
         if(entries.consent || entries.consent === "on"){
-            window.location = "mailto:scarabeedore21@gmail.com?subject=Contact%20Scarabée%20Doré&body="+entries.message;
+            emailjs.send("service_vh72w4k","template_s6d9i0s",{
+              from_name:entries.prenom+" "+entries.nom,to_name:"Sandra Duarte",subject:"Contact clientèle",message:entries.message
+            })
+            .then(status=>{
+              if(status.text === "0K" || status.status === 200)alert("Email envoyé avec succès !");
+              else throw status;
+            })
+            .catch(error=>console.error(error));
         }
+    }
+
+    function MeetingForm(){
+
+      /**
+       * 
+       * @param {import('react').BaseSyntheticEvent} event 
+       */
+      function meetingSubmit(event){
+          event.preventDefault();
+      }
+
+      return (
+        <Form onSubmit={meetingSubmit}></Form>
+      )
     }
     
     return (<div className='contact App'>
@@ -79,12 +101,12 @@ function Contact() {
                     <span className=''>Vous pouvez me joindre pour une prise de rendez-vous ou pour toute question.</span>
                     <span>Téléphone: <a href="tel:0760231984">07.60.23.19.84</a></span>
                     <Form.Group controlId='nom'>
-                      <Form.Label>Nom</Form.Label>
-                      <Form.Control name='nom' placeholder='Nom'/>
+                      <Form.Label>Nom *</Form.Label>
+                      <Form.Control name='nom' placeholder='Nom' required/>
                     </Form.Group>
                     <Form.Group controlId='prenom'>
-                      <Form.Label>Prénom</Form.Label>
-                      <Form.Control name='prenom' placeholder='Prénom'/>
+                      <Form.Label>Prénom *</Form.Label>
+                      <Form.Control name='prenom' placeholder='Prénom' required/>
                     </Form.Group>
                     <Form.Group controlId='email'>
                       <Form.Label>Email *</Form.Label>
@@ -100,7 +122,10 @@ function Contact() {
                     </Form.Group>
                     <span>* Obligatoire</span>
                     <Button type='submit'>Envoyer</Button>
+                    <br /><br />
                 </Form>
+                <span>Réservez votre séance découverte gratuite ! Vous souhaitez atteindre vos objectifs personnels ou professionnels ? Profitez d'un <b>rendez-vous gratuit de 15 minutes</b> avec moi, Sandra DUARTE, coach certifiée. Lors de cette séance, nous discuterons de vos aspirations, évaluerons vos besoins et je vous donnerai des conseils pratiques pour avancer.👉 Réservez dès maintenant en remplissant le formulaire ci-dessous ! </span>
+                <MeetingForm/>
             </main>
             <FooterComponent/>
     </div>);

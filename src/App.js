@@ -248,8 +248,17 @@ function MeetingForm({meetingDate,setDate,meetingHour,meetingMinute,setHour,setM
       }
       
       apiCalendar.createEvent(newEvent).then(data=>{
-          alert("Rendez-vous fixé à la date: "+meetingDate.toLocaleDateString());
-          window.location = "mailto:scarabee.dore21@gmail.com?subject=Demande de rendez-vous&body=Bonjour je souhaite programmer un rendez-vous pour "+meetingDate.toLocaleDateString()+" à "+meetingHour.toString();
+          // window.location = "mailto:scarabee.dore21@gmail.com?subject=Demande de rendez-vous&body=Bonjour je souhaite programmer un rendez-vous pour "+meetingDate.toLocaleDateString()+" à "+meetingHour.toString();
+          emailjs.send("service_vh72w4k","template_s6d9i0s",{from_name:firstName+" "+lastName,to_name:"Sandra Duarte",subject:"Demande de rendez-vous",message:"Bonjour je souhaite programmer un rendez-vous pour "+meetingDate.toLocaleDateString()+" à "+meetingHour.toString()})
+          .then(status=>{
+            if(status.text === "OK"){
+              console.log("Success");
+              alert("Rendez-vous fixé à la date: "+meetingDate.toLocaleDateString());
+            }
+          })
+          .catch(error=>{
+            throw error;
+          })
       }).catch(error=>{
         console.error(error);
         alert("Le rendez-vous n'a pas pu être fixé: "+error);
